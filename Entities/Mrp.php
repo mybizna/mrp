@@ -48,4 +48,15 @@ class Mrp extends BaseModel
         $this->fields->increments('id')->html('hidden');
         $this->fields->string('name')->html('text');
     }
+
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }
