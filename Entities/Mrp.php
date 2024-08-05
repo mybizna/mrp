@@ -2,7 +2,6 @@
 
 namespace Modules\Mrp\Entities;
 
-use Illuminate\Database\Schema\Blueprint;
 use Modules\Base\Entities\BaseModel;
 
 class Mrp extends BaseModel
@@ -20,21 +19,5 @@ class Mrp extends BaseModel
      * @var string
      */
     protected $table = "manufacture";
-
-    /**
-     * List of fields to be migrated to the datebase when creating or updating model during migration.
-     *
-     * @param Blueprint $table
-     * @return void
-     */
-    public function fields(Blueprint $table = null): void
-    {
-        $this->fields = $table ?? new Blueprint($this->table);
-        
-        $this->fields->increments('id')->html('hidden');
-        $this->fields->string('name')->html('text');
-    }
-
-
 
 }
