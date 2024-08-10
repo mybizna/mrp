@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\Mrp\Entities;
+namespace Modules\Mrp\Models;
 
-use Modules\Base\Entities\BaseModel;
+use Modules\Base\Models\BaseModel;
 
 class Mrp extends BaseModel
 {
