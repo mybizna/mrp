@@ -26,7 +26,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Modules\\Mrp\\": ""
+      "Modules\\Mrp\\": "app/",
+      "Modules\\Mrp\\Database\\Factories\\": "database/factories/",
+      "Modules\\Mrp\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Mrp\\Tests\\": "tests/"
     }
   }
 }
